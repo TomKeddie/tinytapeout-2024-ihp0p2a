@@ -15,7 +15,7 @@ module tt_um_tomkeddie_a
   wire               _unused_ok = &{1'b0,
                                     ena,
                                     uio_in,
-                                    ui_in[6:4],
+                                    ui_in[4:3],
                                     1'b0};
   
   wire               r0;
