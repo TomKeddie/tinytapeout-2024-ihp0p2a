@@ -33,21 +33,17 @@ module tt_um_tomkeddie_a
   wire               hs;
   wire               vs;
   wire               rst;
-  wire               left_up;
-  wire               left_down;
-  wire               right_up;
-  wire               right_down;
+  wire               left;
+  wire               right;
   wire               vga_sel;
   wire               score_reset;
   wire               speed_msb;
   wire               speed_lsb;
 
   // input pmod
-  assign left_up    = ui_in[0];
-  assign left_down  = ui_in[1];
-  assign right_up   = ui_in[2];
-  assign right_down = ui_in[3];
-  assign score_reset = ui_in[4];
+  assign left    = ui_in[0];
+  assign right   = ui_in[1];
+  assign score_reset = ui_in[2];
 
   assign speed_lsb = ui_in[5];
   assign speed_msb = ui_in[6];
@@ -100,10 +96,8 @@ module tt_um_tomkeddie_a
   // instantiate the DUT
   vga vga(.clk(clk), 
           .rst(rst),
-          .left_up(left_up),
-          .left_down(left_down),
-          .right_up(right_up),
-          .right_down(right_down),
+          .left(left),
+          .right(right),
           .score_reset(score_reset),
           .speed_lsb(speed_lsb),
           .speed_msb(speed_msb),
