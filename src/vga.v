@@ -211,13 +211,21 @@ module vga(
             end
 	 end
       end
+   end // always @ (posedge clk)
+
+   // score
+   always @(posedge clk) begin
+      if (rst) begin
+	 score <= 19;
+      end else if (score_reset) begin
+	 score <= 0;
+      end
    end
 
    // car logic
    always @ (posedge clk) begin
       if (rst) begin
 	 car_pos_h <= h_visible/2;
-	 score <= 19;
       end else begin
 	 if (left_pressed && car_pos_h > car_size_h/2) begin
             car_pos_h <= car_pos_h - 1;
