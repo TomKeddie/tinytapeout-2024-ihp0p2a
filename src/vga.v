@@ -274,6 +274,7 @@ module vga(
            8,18: score_unit_pixels       <= 3'b101;
            default: score_unit_pixels    <= 3'b101;
 	 endcase
+      end else if (count_v == score_pos_v+2*score_unit-1) begin
 	 case(score)
            0,10: score_unit_pixels       <= 3'b101;
            1,11: score_unit_pixels       <= 3'b010;
