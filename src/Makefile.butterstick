@@ -1,4 +1,4 @@
-PROJ=blink
+PROJ=top_butterstick
 
 # Add Windows and Unix support
 RM         = rm -rf
@@ -24,8 +24,8 @@ all: ${PROJ}.dfu
 dfu: ${PROJ}.dfu
 	dfu-util --alt 0 --download $< --reset
 
-%.json: %.v
-	yosys -p "read_verilog $<; synth_ecp5 -json $@"
+%.json: %.v vga.v
+	yosys -p "read_verilog $< vga.v; synth_ecp5 -json $@"
 
 %_out.config: %.json
 	nextpnr-ecp5 --json $< --textcfg $@ --um5g-85k --speed 8 --package CABGA381 --lpf butterstick.pcf
