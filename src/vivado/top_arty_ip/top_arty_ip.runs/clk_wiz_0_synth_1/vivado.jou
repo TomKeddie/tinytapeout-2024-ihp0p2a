@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Feb 22 19:29:51 2024
+# Process ID: 511563
+# Current directory: /home/tom/git/TomKeddie/tinytapeout-2024-tt06a/src/vivado/top_arty_ip/top_arty_ip.runs/clk_wiz_0_synth_1
+# Command line: vivado -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file: /home/tom/git/TomKeddie/tinytapeout-2024-tt06a/src/vivado/top_arty_ip/top_arty_ip.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file: /home/tom/git/TomKeddie/tinytapeout-2024-tt06a/src/vivado/top_arty_ip/top_arty_ip.runs/clk_wiz_0_synth_1/vivado.jou
+# Running On: x570, OS: Linux, CPU Frequency: 3584.598 MHz, CPU Physical cores: 32, Host memory: 33543 MB
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

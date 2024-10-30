@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "Racing Car Game"      # Project title
+  title:        "VGA Experiments in Tennis"      # Project title
   author:       "Tom Keddie"      # Your name
   discord:      "TomKeddie"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Simple Game"      # One line description of what your project does
@@ -13,9 +13,7 @@ project:
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_tomkeddie_a"
 
-  # List your project's source files here.
-  # Source files must be in ./src and you must list each source file separately, one per line.
-  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:
     - "top_tto.v"
     - "vga.v"
@@ -23,10 +21,10 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "left movement"
-  ui[1]: "right movement"
-  ui[2]: ""
-  ui[3]: ""
+  ui[0]: "left paddle up"
+  ui[1]: "left paddle down"
+  ui[2]: "right paddle up"
+  ui[3]: "right paddle down"
   ui[4]: "score reset"
   ui[5]: "Speed LSB"
   ui[6]: "Speed MSB"
@@ -54,3 +52,4 @@ pinout:
 
 # Do not change!
 yaml_version: 6
+

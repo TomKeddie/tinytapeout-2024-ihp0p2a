@@ -1,0 +1,3 @@
+[submodule "src/icebreaker-verilog-examples"]
+	path = src/icebreaker-verilog-examples
+	url = git@github.com:icebreaker-fpga/icebreaker-verilog-examples.git

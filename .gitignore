@@ -11,3 +11,7 @@ test/__pycache__/
 test/results.xml
 test/gate_level_netlist.v
 *~
+src/top_icebreaker.asc
+src/top_icebreaker.json
+src/top_icebreaker.log
+
